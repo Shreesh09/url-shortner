@@ -16,14 +16,12 @@ const getUrl = async (req, res) => {
             })
             await newUrl.save();
             res.json({
-                "url": count+1,
-                "error": "",
+                "url": count+1
             })
             return;
         }
         res.json({
             "url": shortUrl[0].url,
-            "error": "",
         });
     }
     catch(err)
@@ -34,4 +32,19 @@ const getUrl = async (req, res) => {
     }
 }
 
-module.exports = getUrl;
+const goToUrl = async (req, res) => {
+    const shortUrl = req.params.url;
+
+    try {
+        const link = await url.find({url: shortUrl}, {link: 1});
+
+        if(!link.length)
+            return res.status(404).type("txt").send("Not Found");
+        console.log(`redirecting to ${link[0]['link']}`);
+        res.redirect(link[0]['link']);
+    } catch (err) {
+        res.status(404).type("txt").send("Not Found");
+    }
+}
+
+module.exports = {getUrl, goToUrl};
