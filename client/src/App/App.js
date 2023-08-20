@@ -1,8 +1,8 @@
 import {Form} from "./form";
-
+import './app_style.css';
 function App() {
   return (
-    <div className="App">
+    <div id="App">
       <Form/>
     </div>
   );

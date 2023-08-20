@@ -1,0 +1,15 @@
+#App {
+  font-family: "Khand", sans-serif;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-image: url("https://www.shutterstock.com/shutterstock/videos/1056741371/thumb/1.jpg?ip=x480");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=app_style.css.map */

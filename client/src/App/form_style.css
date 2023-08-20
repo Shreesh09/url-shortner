@@ -1,0 +1,94 @@
+p {
+  margin: 0;
+}
+
+input {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Khand", sans-serif;
+  width: 98%;
+  padding: 0;
+  border: none;
+}
+
+#box {
+  width: 240px;
+  height: 316px;
+  background-color: rgba(217, 217, 217, 0.1);
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+}
+#box #heading-box {
+  width: 100%;
+  background-color: white;
+}
+#box #heading-box #heading {
+  text-align: center;
+  margin: 0;
+}
+#box .field {
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#box .field .field-heading {
+  font-size: 19px;
+  width: 80%;
+  color: white;
+  margin: 0;
+}
+#box .field #label {
+  background-color: white;
+  padding: 0;
+  height: 100%;
+  width: 80%;
+}
+#box .field #short-url {
+  height: 10%;
+  width: 80%;
+  background-color: rgb(69, 65, 65);
+}
+#box .field #short-url #url {
+  color: white;
+  text-align: center;
+}
+
+#button-box {
+  margin-top: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+.error-icon {
+  margin: 4px;
+}
+
+#submit-button {
+  font-size: 20px;
+  padding: 0 8%;
+  font-weight: bold;
+  font-family: "Khand", sans-serif;
+  background-color: white;
+}
+
+@media screen and (min-width: 1035px) {
+  #box {
+    width: 390px;
+    height: 416px;
+  }
+}
+
+/*# sourceMappingURL=form_style.css.map */
