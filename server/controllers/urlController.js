@@ -3,8 +3,13 @@ const url = require('../models/urlModel.js');
 const getUrl = async (req, res) => {
     const link = req.body.link;
     try {
+        try {
+            let check = new URL(link);
+        } catch (err)
+        {
+          return res.json({error: "Invalid url"});
+        }
         const shortUrl = await url.find({link: link}, {url: 1});
-
         if(shortUrl.length === 0)
         {
             const count = await url.find({}).then(

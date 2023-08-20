@@ -7,7 +7,7 @@ input {
   font-weight: bold;
   font-family: "Khand", sans-serif;
   width: 98%;
-  padding: 0;
+  padding: 2% 0;
   border: none;
 }
 
@@ -48,7 +48,7 @@ input {
   width: 80%;
 }
 #box .field #short-url {
-  height: 10%;
+  padding: 2% 0;
   width: 80%;
   background-color: rgb(69, 65, 65);
 }
@@ -58,7 +58,7 @@ input {
 }
 
 #button-box {
-  margin-top: 15%;
+  margin-top: 12%;
   width: 100%;
   display: flex;
   flex-direction: row;

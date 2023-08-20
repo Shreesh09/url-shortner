@@ -6,7 +6,7 @@ input {
   font-weight: bold;
   font-family: 'Khand', sans-serif;
   width: 98%;
-  padding: 0;
+  padding: 2% 0;
   border: none;
 }
 
@@ -50,7 +50,7 @@ input {
     }
 
     #short-url {
-      height: 10%;
+      padding: 2% 0;
       width: 80%;
       background-color: rgba(69, 65, 65, 1);
       #url {
@@ -62,7 +62,7 @@ input {
 }
 
 #button-box {
-  margin-top: 15%;
+  margin-top: 12%;
   width: 100%;
   display: flex;
   flex-direction: row;
