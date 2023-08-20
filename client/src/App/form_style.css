@@ -1,4 +1,4 @@
-p {
+p, a {
   margin: 0;
 }
 
@@ -54,6 +54,7 @@ input {
   background-color: rgb(69, 65, 65);
 }
 #box .field #short-url #url {
+  padding-left: 3px;
   color: white;
   text-align: center;
 }

@@ -1,4 +1,4 @@
-p {
+p, a {
   margin: 0;
 }
 input {
@@ -55,6 +55,7 @@ input {
       width: 80%;
       background-color: rgba(69, 65, 65, 1);
       #url {
+        padding-left: 3px;
         color: white;
         text-align: center;
       }

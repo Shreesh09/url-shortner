@@ -21,8 +21,10 @@ export function Form () {
         })
             .then((response) => response.json())
             .then((result) => {
-                if(result.error)
+                if(result.error) {
                     setError(result.error);
+                    setUrl("");
+                }
                 else{
                     setError("");
                     setUrl(result.url);
@@ -47,7 +49,7 @@ export function Form () {
                 <div className={"field"}>
                     <p  className={"field-heading"}>Short url</p>
                     <div id={'short-url'}>
-                        <p id={'url'}>{url}&nbsp;</p>
+                        <a target={'_blank'} href={`https://url-shortner-3z51.vercel.app/api/${url}`} id={'url'}>https://url-shortner-3z51.vercel.app/api/{url}&nbsp;</a>
                     </div>
                 </div>
                 <div id={"button-box"}>
