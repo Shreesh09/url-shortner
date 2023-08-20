@@ -7,7 +7,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(express.json());
-app.use(cors({ optionsSuccessStatus: 200 }));
+app.use(cors());
 (async ()  => {
     try {
         console.log("Connecting to db...");

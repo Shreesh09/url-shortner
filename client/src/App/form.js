@@ -12,7 +12,7 @@ export function Form () {
     } = useForm();
 
     const onSubmit = async (data) => {
-        await fetch("http://localhost:3030/api/url", {
+        await fetch("https://url-shortner-3z51.vercel.app/api/url", {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
