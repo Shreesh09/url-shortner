@@ -1,8 +1,11 @@
 {
   "name": "url-shortner",
   "version": "1.0.0",
+  "homepage": "https://Shreesh09.github.io/url-shortner",
   "description": "shortens the given url",
   "scripts": {
+    "predeploy": "cd client && npm run build",
+    "deploy": "gh-pages -d client/build",
     "client": "cd client && npm start",
     "server": "cd server && npm start",
     "dev": "concurrently --kill-others \"npm run server\" \"npm run client\""
